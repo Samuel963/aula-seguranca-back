@@ -1,0 +1,18 @@
+meta {
+  name: /vulnerable
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/orm-protection
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cpf": "12345678900",
+    "password": "senha123"
+  }
+}

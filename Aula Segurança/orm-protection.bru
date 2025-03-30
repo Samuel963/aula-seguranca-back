@@ -1,0 +1,18 @@
+meta {
+  name: /orm-protection
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/orm-protection
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cpf": "12345678900' OR '1'='1",
+    "password": "qualquercoisa"
+  }
+}

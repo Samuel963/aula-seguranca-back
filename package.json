@@ -1,0 +1,19 @@
+{
+  "name": "aula-seguranca",
+  "version": "1.0.0",
+  "description": "Aula de segurança",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon server.js",
+    "db": "node create-db.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "sequelize": "^6.37.6",
+    "sqlite3": "^5.1.7"
+  }
+}

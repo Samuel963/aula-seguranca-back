@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Aula Segurança",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

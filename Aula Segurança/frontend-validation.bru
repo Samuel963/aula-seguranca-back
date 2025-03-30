@@ -1,0 +1,18 @@
+meta {
+  name: /frontend-validation
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/frontend-validation
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cpf": "12345678900' OR '1'='1",
+    "password": "qualquercoisa"
+  }
+}

